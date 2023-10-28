@@ -1,0 +1,228 @@
+.banner{
+    background-color: rgb(207, 0, 0);
+    color: white;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.43); 
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.43);
+    
+}
+.position_banner{
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+body{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    margin: 0;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+
+.banner #title{
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    text-decoration: none;
+}
+.icon{
+    font-size: 42px;
+    padding-right: 30px;
+    float: right;
+}
+.topnav{
+    background-color: rgb(53, 52, 52,0.8);
+    color: white;
+    display: none;
+}
+.topnav a{
+    padding: 5px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.topnav a:hover{
+    color: rgb(160, 158, 158);
+}
+.icon:hover{
+    color: rgb(95, 6, 6);
+}
+
+/* Para retirar formatação por defeito nos titulos*/
+#title:active, #title:link, #title:visited{
+    color: white;
+}
+.topnav a:active, .topnav a:link,.topnav a:visited{
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    border: 1px solid rgb(194, 194, 194);
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+.infoWrapper{
+    flex: 60%;
+}
+.imgWrapper{
+    flex: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.cardTitle{
+    margin: 0;
+    padding: 3px;
+    font-size: 16px;
+}
+.cardPrice{
+    color: gray;
+    margin: 0;
+    padding: 3px;
+}
+.cardBtn{
+    background-color: red;
+    border: 0;
+    width: 100px;
+    height: 50px;
+    color: white;
+    border-radius: 5px;
+
+}
+.cardBtn1{
+	background-color: grey;
+    border: 0;
+    width: 100px;
+    height: 50px;
+    color: white;
+    border-radius: 5px;
+}
+
+.cardImg{
+    width: 200px;
+}
+
+.top_footer{
+    background-color: rgb(207, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+.top_footer a{
+    padding: 10px 40px 10px 40px;
+}
+.top_footer a:active, .top_footer a:link,.top_footer a:visited {
+    color: white;
+    font-size: 42px;
+    text-decoration: none;
+    
+}   
+.bottom_footer{
+    background-color: rgb(75, 75, 75);
+    color: white;
+    display: flex;
+    font-size: 18px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.bottom_footer a{
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+}
+.list{
+    flex: 0 45%;
+}
+.social {
+	background-color: rgb(207, 0, 0);
+	display: flex;
+	justify-content: space-around;
+}
+.social a  {
+	color: white;
+	text-decoration: none;
+	font-size: 42px;
+	padding: 20px;
+}
+.social a:visited, social a:active, social a: link{
+	color: white; 
+}
+.links {
+	background-color: rgb (71,71,71);
+	color:white;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.links a {
+	display: block;
+	padding: 5px;
+	font-size: 14px;
+}
+.list{
+	flex: 0 45%; 
+}
+
+
+/* DESKTOP CSS*/
+
+@media only screen and (min-width: 768px){
+    .icon{
+        display: none;
+    }
+    .banner{
+        position: relative;
+    }
+    .topnav{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(53, 52, 52);
+        box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.43);
+
+    }
+    .topnav a{
+        padding: 5px 40px 5px 40px;
+    }
+
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        flex: 0 35%;
+    }
+
+    .top_footer a{
+        padding: 10px 100px 10px 100px;
+    }
+    
+    .bottom-footer{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .list{
+        flex: 0 25%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .spacer{
+        height: 220px;
+	}
+	.social a{
+		font-size: 38px;
+		padding:20px 100px 20px; 
+	}
+	.social {
+		height:100px; 
+	}
+	.list{
+		flex: 0 15%;
+	
+	}
+  
+}
